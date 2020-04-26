@@ -1,0 +1,29 @@
+<form class="container" [formGroup]="formulario" (ngSubmit)="onSubmit()" >
+    <h2>Ingreso de Notas</h2>
+    <p>Registre el nombre de la clase y la nota del primer, segundo parcial y el final.</p>
+    <mat-form-field class="elemento">
+        <mat-label>Nombre de Estudiante</mat-label>
+        <input type="text" matInput formControlName="nombre">
+        <mat-icon matSuffix>face</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="elemento">
+        <mat-label>Nota Primer Parcial</mat-label>
+        <input type="number" matInput formControlName="notaprimerparcial">
+        <mat-icon matSuffix>book</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="elemento">
+        <mat-label>Nota Segundo Parcial</mat-label>
+        <input type="number" matInput formControlName="notasegundoparcial">
+        <mat-icon matSuffix>book</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="elemento">
+        <mat-label>Nota Final</mat-label>
+        <input type="number" matInput formControlName="notafinal">
+        <mat-icon matSuffix>book</mat-icon>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit" color="primary">Enviar</button>
+  </form>
